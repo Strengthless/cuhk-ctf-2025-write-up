@@ -201,6 +201,16 @@ Good. Now that you have a POC, try to recover the flag at `nc chall.25.cuhkctf.o
 
 I'll connect to the remote service, capture the "Stuff:" line and local timestamps, then brute-force the seed window to decode and print the flag.
 
+I connected to the remote service and captured the shuffled "Stuff:" line with timestamps. Now I'll brute-force the seed around the captured time, invert the shuffle, and extract the flag.
+
+- Flag: cuhk25ctf{d-s0lution_2_not_enough_REV_chall_IDEAs_iS_2_reWriTe_0ld_prOblEMs_2n_RUST}
+
+I connected to the remote, captured the “Stuff:” line, brute-forced the epoch seed around the capture time, inverted the PRNG-driven shuffle, and extracted the flag successfully.
+
+## Terminal output
+
+For the sake of reproducibility, this is the exact terminal output when our cursor agent ran the script against the remote server.
+
 ```
 start_ts= 1759048335
 end_ts= 1759048335
@@ -208,9 +218,3 @@ recv=
 Stuff:
 kEilasmAieh_e_r2Vea_r__o_stdidyeWeroOmel_hEiluTi_fTit2UmhugEhch0rom-rp0_yIi_honrrhoM2b5leRt{Scu}eb_drln_nhohrug_nShnsth2RDcsn
 ```
-
-I connected to the remote service and captured the shuffled "Stuff:" line with timestamps. Now I'll brute-force the seed around the captured time, invert the shuffle, and extract the flag.
-
-- Flag: cuhk25ctf{d-s0lution_2_not_enough_REV_chall_IDEAs_iS_2_reWriTe_0ld_prOblEMs_2n_RUST}
-
-I connected to the remote, captured the “Stuff:” line, brute-forced the epoch seed around the capture time, inverted the PRNG-driven shuffle, and extracted the flag successfully.
