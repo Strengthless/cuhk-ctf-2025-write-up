@@ -3,7 +3,7 @@
 This write-up is written by Kim from team 0x5F3759DF.
 
 ## Foreword
-As a modern hacker in 2025, we employed the very-sophiscated "prompt engineering" technique to solve this challenge in two-shot.
+As a modern hacker in 2025, we employ the very-sophisticated "prompt engineering" technique to solve this challenge in two shots.
 
 No inspecting, no debugging, no disassembling, no reverse engineering - all I have is a prompt.
 
